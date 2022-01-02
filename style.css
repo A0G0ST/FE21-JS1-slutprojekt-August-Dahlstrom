@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(#2b1055, #7597de) ;
+}
+#wrapper{
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.card{ /* */
+   
+    background: #000000d0;
+    color: whitesmoke;
+    padding: 2rem;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto ;
+    margin-top: 2rem;
+   
+    
+}
+.search{ /* */
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#submitBtn, #clearBtn{
+    margin-left:0.5rem ;
+    border-radius: 50%;
+    border: none;
+    height: 54px;
+    width: 60px;
+    outline: none;
+    background-color: #7c7c7c2b;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+   
+}
+
+
+input.search-bar{ /* */
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 18px;
+    background-color: #7c7c7c2b;
+    color: whitesmoke;
+    font-family: inherit;
+    font-size: 100%;
+    width: calc(100% - 100px);
+    text-decoration: none;
+    
+}
+
+h2.city{
+    margin-top: 1rem;
+    margin-bottom: 1rem ;
+    font-size: 40px;
+}
+h1.temp{
+    font-size: 25px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex img{
+    
+    margin-left: -2rem;
+}
+
+.description{
+    text-transform: capitalize;
+    
+}
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: whitesmoke;
+}
+
+.fivedays{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15rem;
+}
+.fivedays div{
+    
+    color: whitesmoke;
+    border-radius: 30px;
+    background: #000000d0;
+    padding: 1rem;
+    width: 230px;
+}
+
+.background{
+    width: 100%;
+    height:100%;
+    overflow: hidden ;
+}
+.background img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    top: -100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+
